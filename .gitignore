@@ -9,7 +9,10 @@ idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*/__pycache__/
 *.py[cod]
+.pyc
+*.pyc
 *$py.class
 
 # C extensions
@@ -121,6 +124,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv
 
 # Spyder project settings
 .spyderproject
@@ -145,3 +149,36 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+# addd new ignoreid files
+.DS_Store
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+dist
+prod_settings.py
+
+
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+*backend/*/migrations/*
+!*backend/*/migrations
+!*backend/*/migrations/__init__.py
+
+
+media/*
+!*media
+
+log/debug.log
+
+build
+doc
+home.rst
+make.bat
+Makefile
+
+doc-dev
